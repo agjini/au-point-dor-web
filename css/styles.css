@@ -133,6 +133,10 @@ p {
     color: #d52ca7;
 }
 
+.text-highlight {
+    font-size: 17px;
+}
+
 .modal-content {
     background-color: #1d1d1d;
 }
