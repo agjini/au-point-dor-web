@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html itemscope itemtype="http://schema.org/LocalBusiness">
 <head>
     <meta charset="utf-8">
     <title>Au Point d'Or - Toulouse</title>
@@ -7,6 +7,8 @@
     <meta name="keywords" content="couture, retouche, Toulouse, Croix-Daurade, atelier, création, sur-mesure, confection, rideaux, voilage, housse, réparation, auvent, vêtement, ourlet, customisation, fermeture éclair, couturière">
     <meta name="author" content="Augustin Gjini">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta itemprop="currenciesAccepted" content="EUR"/>
+    <meta itemprop="paymentAccepted" content="check, cash"/>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
     <link href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
@@ -48,7 +50,7 @@
 <header id="first">
     <div class="header-content">
         <div class="inner">
-            <h1 class="cursive wow flipInX">Au Point d'Or</h1>
+            <h1 class="cursive wow flipInX" itemprop="name">Au Point d'Or</h1>
             <h4 class="dore">Atelier de couture</h4>
             <h4>Quartier Croix Daurade - Toulouse - 05 61 48 46 87</h4>
             <hr>
@@ -97,10 +99,12 @@
 
                 <div class="media wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
                     <h3>Adresse :</h3>
-                    <div class="media-body media-middle">
+                    <div class="media-body media-middle" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                         <p>
-                            61 route d'Albi<br>31200 Toulouse<br>05 61 48 46 87<br>
-                            nadiameski1@gmail.com
+                            <span itemprop="streetAddress">61 route d'Albi</span><br>
+                            <span itemprop="postalCode">31200</span> <span itemprop="addressLocality">Toulouse</span><br>
+                            <span itemprop="telephone">05 61 48 46 87</span><br>
+                            <span itemprop="email">nadiameski1@gmail.com</span>
                         </p>
                     </div>
                     <div class="media-right">
@@ -120,6 +124,7 @@
             <h2 class="text-center text-primary">Les horaires</h2>
             <hr>
             <p class="text-center text-highlight">
+                <meta itemprop="openingHours" content="Mo-Fr 08:30-12:00 14:30-18:30" property="openingHours">
                 Du lundi au vendredi<br>
                 8h30-12h<br>
                 14h30-18h30<br>
